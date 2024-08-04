@@ -15,8 +15,13 @@
 
 <script setup>
 import { ref } from "vue";
-import logo from "../assets/logo-hexagon.svg";
+import logo from "../assets/logo.png";
 
 const logoImg = ref(logo);
 
 </script>
+
+<style scoped>
+
+
+</style>

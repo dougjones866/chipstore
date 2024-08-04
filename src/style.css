@@ -103,6 +103,12 @@ h1 {
 .logo-wrap {
   width: 120px;
   height: 120px;
+  
+}
+
+.logo-wrap img {
+  width: 75px;
+  height: 75px;
 }
 
 .products-link {

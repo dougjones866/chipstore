@@ -1,10 +1,11 @@
 <template>
     <div>
-        <h1>Home Page</h1>
+        <ProductsPage />
     </div>
 </template>
 
 <script setup>
+import ProductsPage from './ProductsPage.vue'
 
 </script>
 
