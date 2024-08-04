@@ -8,10 +8,11 @@ import NotFoundPage from "./pages/NotFoundPage.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    // {
-    //     path: '/',
-    //     component: Home,
-    // },
+    {
+      path: '/chipstore',
+      redirect: '/product',
+      component: ProductsPage,
+    },
     {
       path: "/cart",
       component: ShoppingCartPage,
