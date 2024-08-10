@@ -1,7 +1,7 @@
 import express from "express";
 import { MongoClient } from "mongodb";
 import path from "path";
-import cors from "cors";
+// import cors from "cors";
 
 async function start() {
   const url = `mongodb+srv://kibroman:Woowoowoo866!@cluster0.wpdiqrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
@@ -21,7 +21,7 @@ async function start() {
   );
 
   app.use(express.json());
-  app.use(cors());
+  // app.use(cors());
 
   app.get("/api/products", async (req, res) => {
     const products = await db.collection("products").find({}).toArray();
