@@ -9,8 +9,9 @@ async function start() {
 
   await client.connect();
   const db = client.db("fsv-db");
-
+  
   const app = express();
+  app.use(express.json());
   app.use("/images", express.static(path.join(__dirname, "../assets")));
 
   app.use(
@@ -20,7 +21,6 @@ async function start() {
     })
   );
 
-  app.use(express.json());
   // app.use(cors());
 
   app.get("/api/products", async (req, res) => {
